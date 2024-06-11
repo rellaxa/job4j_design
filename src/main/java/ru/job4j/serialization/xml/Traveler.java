@@ -1,13 +1,28 @@
-package ru.job4j.serialization.json;
+package ru.job4j.serialization.xml;
 
+import ru.job4j.serialization.Person;
+
+import javax.xml.bind.annotation.*;
 import java.util.Arrays;
 
+@XmlRootElement(name = "traveler")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Traveler {
-    private final boolean internPassport;
-    private final int numberOfTrips;
-    private final String favouriteCountry;
-    private final Person person;
-    private final String[] countries;
+
+    @XmlAttribute
+    private boolean internPassport;
+    @XmlAttribute
+    private int numberOfTrips;
+    @XmlAttribute
+    private String favouriteCountry;
+    private Person person;
+
+    @XmlElementWrapper(name = "countries")
+    @XmlElement(name = "country")
+    private String[] countries;
+
+    public Traveler() {
+    }
 
     public Traveler(boolean internPassport, int numberOfTrips, String favouriteCountry, Person person, String[] countries) {
         this.internPassport = internPassport;
