@@ -55,7 +55,7 @@ public class Traveler {
 
     public static void main(String[] args) {
         Traveler traveler = new Traveler(true, 35, "Canada",
-                new Person(false, 24, new Contact ("+7 999 111 11 3"), "Worker", "Free"),
+                new Person(false, 24, new Contact("+7 999 111 11 3"), "Worker", "Free"),
                 new String[]{"Canada", "Japan", "USA", "Italy"});
 
         /* JSONArray из ArrayList */

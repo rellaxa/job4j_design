@@ -8,7 +8,8 @@ public class Contact {
     @XmlAttribute
     private String phone;
 
-    public Contact() {}
+    public Contact() {
+    }
 
     public Contact(String phone) {
         this.phone = phone;

@@ -24,13 +24,14 @@ public class Person {
     @XmlElement(name = "status")
     private String[] statuses;
 
-    public Person() {}
+    public Person() {
+    }
 
-    public Person(boolean sex, int age, Contact contact, String... statues) {
+    public Person(boolean sex, int age, Contact contact, String... statuses) {
         this.sex = sex;
         this.age = age;
         this.contact = contact;
-        this.statuses = statues;
+        this.statuses = statuses;
     }
 
     @Override
