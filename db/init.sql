@@ -1,0 +1,1 @@
+create database simple_db;
