@@ -1,6 +1,5 @@
 package ru.job4j.ood.tdd;
 
-import org.checkerframework.checker.units.qual.C;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
