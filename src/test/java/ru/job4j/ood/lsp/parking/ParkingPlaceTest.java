@@ -1,6 +1,5 @@
 package ru.job4j.ood.lsp.parking;
 
-import org.checkerframework.checker.units.qual.C;
 import org.junit.jupiter.api.Test;
 import ru.job4j.ood.lsp.parking.model.Car;
 import ru.job4j.ood.lsp.parking.model.Truck;
