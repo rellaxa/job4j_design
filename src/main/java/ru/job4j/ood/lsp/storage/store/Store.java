@@ -7,7 +7,7 @@ import java.util.List;
 public interface Store {
 
     boolean addFood(Food product);
-
     List<Food> getStoreProducts();
+    void deleteProducts();
 
 }

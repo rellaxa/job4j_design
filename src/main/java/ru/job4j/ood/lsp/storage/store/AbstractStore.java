@@ -20,6 +20,11 @@ abstract public class AbstractStore implements Store {
     abstract public boolean accept(Food product);
 
     public List<Food> getStoreProducts() {
-        return products;
+        return List.copyOf(products);
+    }
+
+    @Override
+    public void deleteProducts() {
+        products.clear();
     }
 }
