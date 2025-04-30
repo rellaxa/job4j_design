@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class Fool {
 
     public static String checkWord(int number) {
-        String word = String.valueOf(number);
-        if (number % 3 == 0 && number % 5 == 0) {
-            word = "FizzBuzz";
-        } else if (number % 3 == 0) {
-            word = "Fizz";
-        } else if (number % 5 == 0) {
-            word = "Buzz";
+        String word = "";
+        if (number % 3 == 0) {
+            word += "Fizz";
+        }
+        if (number % 5 == 0) {
+            word += "Buzz";
+        }
+        if (word.isEmpty()) {
+            return String.valueOf(number);
         }
         return word;
     }
@@ -41,4 +43,5 @@ public class Fool {
             startAt = computeAnswer(startAt, answer);
         }
     }
+
 }
